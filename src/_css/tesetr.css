@@ -1,0 +1,78 @@
+#hero{
+	position: fixed;
+	width:300px;
+	height: 500px;
+	background: #94D2D3;
+	
+}
+
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+	width: 50%;
+	height:50%;
+ 
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FF00FF;
+    width: 100%;
+    padding: 50px;
+}/* CSS Document */
+
+
+
+
+body{
+	
+	background: #000000;
+	
+}
+
+.project_container {
+    position: relative;
+	top:500px;
+    width: 250px;
+	
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.ontopContent {
+  transition: .6s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project_container:hover .image {
+  opacity: 0.60;
+}
+
+.project_container:hover .ontopContent {
+  opacity: 1;
+}
+
+.ontopText {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

@@ -1,0 +1,523 @@
+/* LESS Document */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600,700|Nunito+Sans|Quicksand:400,700|Raleway:800);
+
+// Vars Media Queries
+@minWidth_body_desktop: 1000px;
+@minWidth_content_desktop: 600px;
+@minWidth_body_devicePortrait: 380px;
+@minWidth_content_devicePortrait: 65%;
+@maxWidth_body_desktop: 1920px;
+
+@colourScheme_white: #FFF;
+@colourScheme_gray: #AAA;
+@colourScheme_black: #000;
+
+@fontSize_title: 3.4375em;
+@fontSize_subline: 1.5625em;
+@fontSize_subsubline: 1.125em;
+@fontSize_text: 1em;
+
+@scale_text_devices: 1;
+
+@fontSize_title_device: @fontSize_title*0.85*@scale_text_devices;
+@fontSize_subline_device: @fontSize_subline *@scale_text_devices;
+@fontSize_subsubline_device: @fontSize_subsubline*@scale_text_devices;
+@fontSize_text_device: @fontSize_subsubline_device;
+
+@altTextColour: #3c374b;
+
+@spacer-size: 15px;
+@spacer-large: @spacer-size*2;
+
+@margin-sides_std: 6vw;
+@margin-sides_larger: @margin-sides_std *2;
+
+@mq_maxWidth_mobile: ~"only screen and (max-width: 800px)";
+
+@high_dpi:  ~" (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)";
+
+@media only screen and (orientation: portrait) {
+  .spacer {
+    margin-right: auto;
+    height: @spacer-size;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: @colourScheme_white;
+//  background-color: @colourScheme_black;
+  font-family: 'Quicksand', 'sans-serif';
+  height: 100%;
+  @media @mq_maxWidth_mobile {
+    min-width: @minWidth_body_devicePortrait;
+    max-width: 100%;
+  }
+}
+// ---------------------------------------- //
+// -------------- STD FONTS --------------- //
+// ---------------------------------------- //
+
+
+.text {
+  font-size: @fontSize_text;
+  line-height: 23.5px*1.1;
+  text-align: left;
+
+  @media @mq_maxWidth_mobile {
+    font-size: @fontSize_text_device;
+    line-height: 23.5px*1.1;
+  }
+}
+
+.h1 {
+  font-size: 60px;
+  letter-spacing: 0.08em;
+  text-shadow: 0em 0em 0.5em @colourScheme_black;
+  text-transform: uppercase;
+  margin-bottom: 9.25px;
+  line-height: 1.0em;
+
+  @media @mq_maxWidth_mobile {
+    font-size: @fontSize_title_device;
+  }
+}
+
+.h2 {
+  font-size: @fontSize_subline;
+  letter-spacing: 0.1em;
+  text-shadow: 0em 0em 0.5em @colourScheme_black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media @mq_maxWidth_mobile {
+    font-size: @fontSize_subline_device;
+  }
+}
+
+.h3 {
+  font-size: @fontSize_subsubline;
+  text-shadow: 0em 0em 0.2em @colourScheme_black;
+  text-transform: uppercase;
+
+  line-height: 1.62em;
+  padding-top: 6.5px;
+  letter-spacing: 0.1em;
+
+  @media @mq_maxWidth_mobile {
+    font-size: @fontSize_subsubline_device;
+  }
+}
+
+.spacer {
+  position: relative;
+  float: left;
+  width: @spacer-size*1.5;
+  height: @spacer-size;
+  @media @mq_maxWidth_mobile {
+    margin-right: auto;
+    height: @spacer-size;
+  }
+}
+
+// ---------------------------------------- //
+// -------------- NAV --------------------- //
+// ---------------------------------------- //
+
+
+@nav_height:7vh;
+@padding: @nav_height/2.3;
+#navbar {
+  background-color: @colourScheme_white;
+  z-index: 100;
+  height: @nav_height;
+  width: 100%;
+}
+
+#navbar_innerLayout{
+  padding-left: @spacer-large*1.5;
+  padding-right: @spacer-large*1.5;
+}
+
+#nav{
+  float:right;
+  padding-top: @padding - @fontSize_text*0.8;
+}
+
+#logo{
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: @fontSize_text*1.5;
+  text-align: left;
+  float: left;
+  padding-top: @padding - @fontSize_text;
+}
+
+.navlink {
+  font-weight: 800;
+  font-family: Montserrat;
+  text-align: center;
+
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+.navlink::after{
+  content: '';
+
+  position: absolute;
+  display: block;
+  margin-top: 4px;
+
+  width: 55px;
+  height: 3px;
+
+  border-bottom: 4px solid;
+}
+
+.l_active:after{
+
+}
+.l_inactive:after{
+  visibility: hidden;
+}
+
+.l_inactive:hover:after{
+  visibility: visible;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  -webkit-box-shadow: -3px -1px 7px 2px rgba(0,0,0,0.40);
+  -moz-box-shadow: -3px -1px 7px 2px rgba(0,0,0,0.40);
+  box-shadow: -3px -1px 7px 2px rgba(0,0,0,0.40);
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+// ---------------------------------------- //
+// -------------- HERO -------------------- //
+// ---------------------------------------- //
+
+
+#hero_video_layouter {
+  min-width: @minWidth_body_desktop;
+  width: 100%;
+  height: 100px;
+  background-color: @colourScheme_black;
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media @mq_maxWidth_mobile {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+#hero_text {
+  margin-bottom: @spacer-large;
+  min-width: @minWidth_body_devicePortrait;
+  padding-left: @margin-sides_larger;
+  padding-right: @margin-sides_larger;
+  position: absolute;
+
+  @media @mq_maxWidth_mobile {
+    min-width: @minWidth_body_devicePortrait;
+    padding-left: @margin-sides_std;
+    padding-right: @margin-sides_std;
+  }
+}
+
+#hero_video_container {
+  height: 100%;
+  width: 100%;
+}
+
+#hero_video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+
+  // VIDEO SIZING VARS
+  font-size: 63vh; //VIDEO MIN HEIGHT (orig format is 1920x500px)
+  line-height: 800px; //VIDEO MAX HEIGHT (orig format is 1920x500px), scaling to fit height of container
+  letter-spacing: 0.5; // RATIO video frame of window height
+  font-size-adjust: 60; //
+
+  @media @mq_maxWidth_mobile {
+    font-size: 400px; // min for 9:16 format is 281px
+    letter-spacing: 0.5;
+
+  }
+}
+
+// ---------------------------------------- //
+// -------------- SECTIONS ---------------- //
+// ---------------------------------------- //
+
+.sec{
+  background-color: @colourScheme_white;
+  height: 100%;
+   &_masters{
+    background-color: @colourScheme_black;
+  }
+}
+
+// ---------------------------------------- //
+// -------------- INTRO ------------------- //
+// ---------------------------------------- //
+#intro {
+  padding-top: @spacer-large+@spacer-size;
+}
+
+// ---------------------------------------- //
+// -------------- PROJECTS ---------------- //
+// ---------------------------------------- //
+
+.layouter {
+  padding-top: @spacer-large;
+  padding-bottom: @spacer-large*1.4;
+  min-width: @minWidth_body_desktop;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media @mq_maxWidth_mobile {
+    min-width: @minWidth_body_devicePortrait;
+    max-width: 100%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:@spacer-size*1.5;
+
+  @media @high_dpi{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+  @media @mq_maxWidth_mobile{
+    grid-template-columns: 1fr;
+  }
+}
+
+.gridbox{
+  border-radius: 5px;
+  border-color: #101010;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.innerLayout {
+  height: auto;
+  width: auto;
+  padding-left: @margin-sides_larger;
+  padding-right: @margin-sides_larger;
+
+  @media @mq_maxWidth_mobile {
+    padding-left: @margin-sides_std;
+    padding-right: @margin-sides_std;
+  }
+}
+
+.project_galleryItem {
+  //margin-top: @spacer-size;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+
+  @media @mq_maxWidth_mobile {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  & .h2{
+    margin-bottom: 0px;
+  }
+
+  & .h3 {
+    line-height: 1.6em;
+
+    @media @mq_maxWidth_mobile {
+      line-height: 1.4em;
+    }
+  }
+}
+
+
+.galleryItem_image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 100%;
+
+  @media @mq_maxWidth_mobile {
+    opacity: 0.6;
+  }
+}
+
+.ontopContent {
+  transition: .6s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+
+  @media @mq_maxWidth_mobile {
+  }
+
+  @media @mq_maxWidth_mobile {
+    opacity: 1;
+    transition: 0s ease;
+  }
+}
+
+.ontopText {
+  color: #fff;
+  font-size: @fontSize_subsubline*0.9;
+  padding-right: auto;
+  padding-left: auto;
+
+  @media @mq_maxWidth_mobile {
+  }
+}
+
+.project_galleryItem:hover .galleryItem_image {
+  opacity: 0.40;
+}
+
+.project_galleryItem .h3 {
+  line-height: 1.45em;
+}
+
+.project_galleryItem:hover .ontopContent {
+  opacity: 1.0;
+}
+
+
+// ---------------------------------------- //
+// -------------- FOOTER ------------------ //
+// ---------------------------------------- //
+
+.contact{
+  color:@colourScheme_black;
+  text-transform: none;
+  & .h3 {
+    line-height: 1.0em;
+    padding-top: 3px;
+    text-shadow: none;
+  }
+  & .project_text{
+    line-height: 1.45em;
+    width: 100%;
+    padding-top: @spacer-size*1.1;
+    font-size: @fontSize_text;
+
+    @media @mq_maxWidth_mobile {
+      font-size: @fontSize_text_device;
+    }
+  }
+
+  & .bottom{
+    vertical-align: text-bottom;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    position: absolute;
+  }
+
+
+  & img {
+    width: @fontSize_text;
+    margin-right: 1px;
+    @media @mq_maxWidth_mobile {
+      width: @fontSize_text_device*0.8;
+      height: @fontSize_text_device*0.8;
+    }
+  }
+}
+
+// ---------------------------------------- //
+// -------------- OTHER ------------------- //
+// ---------------------------------------- //
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.invisible {
+  color: @colourScheme_black;
+  width: 100%;
+  font-size: 8px;
+  @media @mq_maxWidth_mobile {
+    font-size: 0px;
+  }
+}
+
+.preloader {
+  background-size: 0px 0px;
+  height: 0px;
+  width: 0px;
+}
+
+#preloaded-images1 .preloader {
+  background-image: url(../img_spartathlon/sparta_header_SM.jpg);
+}
+
+#preloaded-images2 .preloader {
+  background-image: url(../img_lab2/lab2_header_SM.jpg);
+}
+
+#preloaded-images3 .preloader {
+  background: url(../images_goma/sgoma_header_SM.jpg);
+}
+
+#preloaded-images11 .preloader {
+  background-image: url(../img_spartathlon/sparta_header_GR.jpg);
+}
+
+#preloaded-images21 .preloader {
+  background-image: url(../img_lab2/lab2_header_GR.jpg);
+}
+
+#preloaded-images31 .preloader {
+  background-image: url(../images_goma/sgoma_header_GR.jpg);
+}
+
+
+#parked {
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0);
+  transform: translateX(-50%);
+  margin-right: auto;
+  margin-left: auto;
+  display: block; /*for the img inside your div */
+}

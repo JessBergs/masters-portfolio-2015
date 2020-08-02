@@ -1,0 +1,477 @@
+/* LESS Document */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPBQ.ttf) format('truetype');
+}
+@media only screen and (orientation: portrait) {
+  /*  .project_galleryItem {
+      width: 100%;
+      margin-right: auto;
+       margin-left:auto;
+        float: none;
+        clear:both;
+    }*/
+  .spacer {
+    margin-right: auto;
+    height: 15px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #3c374b;
+  font-family: 'Nunito Sans', 'sans-serif';
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  body {
+    min-width: 380px;
+    max-width: 100%;
+  }
+}
+.text {
+  font-size: 1em;
+  line-height: 25.85px;
+  text-align: left;
+}
+@media only screen and (max-width: 900px) {
+  .text {
+    font-size: 1.125em;
+    line-height: 25.85px;
+  }
+}
+.h1 {
+  font-size: 60px;
+  letter-spacing: 0.08em;
+  text-shadow: 0em 0em 0.5em #000;
+  text-transform: uppercase;
+  margin-bottom: 9.25px;
+  line-height: 1.0em;
+}
+@media only screen and (max-width: 900px) {
+  .h1 {
+    font-size: 2.921875em;
+  }
+}
+.h2 {
+  font-size: 1.5625em;
+  letter-spacing: 0.1em;
+  text-shadow: 0em 0em 0.5em #000;
+  text-transform: uppercase;
+  margin-bottom: 16.75px;
+}
+@media only screen and (max-width: 900px) {
+  .h2 {
+    font-size: 1.5625em;
+  }
+}
+.h3 {
+  font-size: 1.125em;
+  text-shadow: 0em 0em 0.2em #000;
+  text-transform: uppercase;
+  line-height: 1.62em;
+  padding-top: 6.5px;
+}
+@media only screen and (max-width: 900px) {
+  .h3 {
+    font-size: 1.125em;
+  }
+}
+.spacer {
+  position: relative;
+  float: left;
+  width: 22.5px;
+  height: 15px;
+}
+@media only screen and (max-width: 900px) {
+  .spacer {
+    margin-right: auto;
+    height: 15px;
+  }
+}
+#navbar {
+  background-color: #FFF;
+  z-index: 100;
+  height: 7vh;
+  width: 100%;
+}
+#navbar_innerLayout {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+#nav {
+  float: right;
+  padding-top: 2.24347826vh;
+}
+#logo {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: left;
+  float: left;
+  padding-top: 2.04347826vh;
+}
+/* Navbar links */
+.navlink {
+  font-weight: 800;
+  font-family: Montserrat;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+.navlink::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin-top: 4px;
+  width: 55px;
+  height: 3px;
+  border-bottom: 4px solid;
+}
+.l_inactive:after {
+  visibility: hidden;
+}
+.l_inactive:hover:after {
+  visibility: visible;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: -3px -1px 7px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -3px -1px 7px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: -3px -1px 7px 2px rgba(0, 0, 0, 0.4);
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+#hero_video_layouter {
+  min-width: 1000px;
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 900px) {
+  #hero_video_layouter {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+#hero_text {
+  padding-left: 16vw;
+  padding-right: 16vw;
+  margin-bottom: 30px;
+  min-width: 380px;
+  position: absolute;
+}
+@media only screen and (max-width: 900px) {
+  #hero_text {
+    min-width: 380px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+}
+#hero_video_container {
+  height: 100%;
+  width: 100%;
+}
+#hero_video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
+  clip-path: inset(10px 0px 25px 0px);
+  font-size: 55vh;
+  line-height: 800px;
+  letter-spacing: 0.5;
+  font-size-adjust: 60;
+}
+@media only screen and (max-width: 900px) {
+  #hero_video {
+    font-size: 400px;
+    letter-spacing: 0.5;
+  }
+}
+.sec_pf {
+  background-color: #FFF;
+}
+.sec_pf .invisible {
+  color: #FFF;
+}
+.sec_masters {
+  background-color: #000;
+}
+#intro {
+  padding-top: 45px;
+}
+.layouter {
+  padding-top: 39px;
+  padding-bottom: 42px;
+  min-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 900px) {
+  .layouter {
+    min-width: 380px;
+    max-width: 100%;
+  }
+}
+.grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 22.5px;
+}
+@media  (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.gridbox {
+  border-radius: 5px;
+  border-color: #101010;
+  justify-self: stretch;
+  background-color: #ffaa00;
+  margin-right: auto;
+  margin-left: auto;
+}
+.innerLayout {
+  height: auto;
+  width: auto;
+  padding-left: 16vw;
+  padding-right: 16vw;
+}
+@media only screen and (max-width: 900px) {
+  .innerLayout {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+}
+.project_galleryItem {
+  position: relative;
+  float: left;
+  background-color: #000;
+}
+@media only screen and (max-width: 900px) {
+  .project_galleryItem {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.project_galleryItem .h2 {
+  margin-bottom: 0px;
+}
+.project_galleryItem .h3 {
+  line-height: 1.6em;
+}
+@media only screen and (max-width: 900px) {
+  .project_galleryItem .h3 {
+    line-height: 1.4em;
+  }
+}
+.galleryItem_image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .galleryItem_image {
+    opacity: 0.6;
+  }
+}
+.ontopContent {
+  transition: .6s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 900px) {
+  .ontopContent {
+    opacity: 1;
+    transition: 0s ease;
+  }
+}
+.ontopText {
+  color: #fff;
+  font-size: 1.0125em;
+  padding-right: auto;
+  padding-left: auto;
+}
+@media only screen and (max-width: 900px) {
+}
+.project_galleryItem:hover .galleryItem_image {
+  opacity: 0.40;
+}
+.project_galleryItem .h3 {
+  line-height: 1.45em;
+}
+.project_galleryItem:hover .ontopContent {
+  opacity: 1.0;
+}
+#footer {
+  width: 100%;
+  min-height: 17vh;
+  min-width: 1000px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 900px) {
+  #footer {
+    min-width: 380px;
+    max-width: 100%;
+  }
+}
+#footer .project_galleryItem {
+  background-color: #FFF;
+}
+.contact_layouter {
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_innerLayout {
+  padding-left: 16vw;
+  padding-right: 16vw;
+  padding-top: 15px;
+}
+@media only screen and (max-width: 900px) {
+  .contact_innerLayout {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+}
+.contact_innerLayout .h3 {
+  font-weight: 800;
+  font-family: Montserrat;
+  text-shadow: none;
+  text-transform: none;
+  line-height: 1.0em;
+  padding-top: 3px;
+}
+.contact_innerLayout .h2 {
+  text-shadow: 0 0 0;
+  padding-top: 15px;
+  margin-bottom: 0px;
+}
+.contact_innerLayout img {
+  width: 1em;
+  margin-right: 1px;
+}
+@media only screen and (max-width: 900px) {
+  .contact_innerLayout img {
+    width: 0.9em;
+    height: 0.9em;
+  }
+}
+.contact_innerLayout .project_text {
+  text-shadow: none;
+  line-height: 1.45em;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  font-size: 1em;
+}
+@media only screen and (max-width: 900px) {
+  .contact_innerLayout .project_text {
+    font-size: 1.125em;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.invisible {
+  color: #000;
+  width: 100%;
+  font-size: 8px;
+}
+@media only screen and (max-width: 900px) {
+  .invisible {
+    font-size: 0px;
+  }
+}
+.preloader {
+  background-size: 0px 0px;
+  height: 0px;
+  width: 0px;
+}
+#preloaded-images1 .preloader {
+  background-image: url(../img_spartathlon/sparta_header_SM.jpg);
+}
+#preloaded-images2 .preloader {
+  background-image: url(../img_lab2/lab2_header_SM.jpg);
+}
+#preloaded-images3 .preloader {
+  background: url(../images_goma/sgoma_header_SM.jpg);
+}
+#preloaded-images11 .preloader {
+  background-image: url(../img_spartathlon/sparta_header_GR.jpg);
+}
+#preloaded-images21 .preloader {
+  background-image: url(../img_lab2/lab2_header_GR.jpg);
+}
+#preloaded-images31 .preloader {
+  background-image: url(../images_goma/sgoma_header_GR.jpg);
+}
+#parked {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transform: translateX(-50%);
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  /*for the img inside your div */
+}

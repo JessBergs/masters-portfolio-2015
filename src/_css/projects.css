@@ -1,0 +1,279 @@
+a:link{ color: #AAA;}
+a:hover{ color:#FFF;}
+a:visited{ color:#FFF;}
+a:active{ color:#AAA;}
+
+p{
+	}
+
+body{
+background-color:#00F000;
+font-family:'Quicksand', sans-serif;
+padding: 0;
+margin: 0;
+min-width:1200px;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+#parallax_bg {
+	height:275px;
+	background-color:#000000;
+	background-attachment:fixed;
+	background-position: 50% -25px;
+  	background-size:2880px 538px;
+	background-repeat:no-repeat; 
+	margin-left:auto;
+margin-right:auto;
+	min-width:1200px;
+	overflow: hidden;
+	position: relative;
+
+}
+	
+ #parallax_content{
+	  	background-color:#000000;
+	 min-width:1200px;
+   }
+	
+#project_content {
+	padding-top:0px;
+	max-width: 800px;
+	min-width:800px;
+	margin-right: auto; 
+	margin-left: auto;
+	color: #FFF;
+}
+
+#project_title{
+	font-size: 55px;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+	position:relative;
+	line-height: 1.0em;
+	letter-spacing:0px;
+	font-kerning: auto;
+}
+
+#project_sub{
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+#project_tag{
+	font-size: 14.5px;
+	font-style: italic;
+	color: #AAA;
+	margin-top: 15px;
+	text-transform: uppercase;
+	margin-bottom: 27.5px;
+}
+#project_footer{
+	font-size: 14.5px;
+	line-height: 20px;
+}
+
+.project_hl{}
+.project_h1{
+	font-size: 25px;
+	margin-top: 28px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.project_h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+
+
+		}
+
+.project_text{
+	font-size: 14.5px;
+	line-height: 23.5px;
+	text-align: left;
+}
+
+.project_paragraph{
+	margin-top:12px;}
+
+.project_image_169{
+		width:inherit;
+	padding-top:32px;
+	}
+.project_slideshow_169{
+	width:inherit;
+	padding-top:30px;
+	padding-bottom:45px;
+	
+	}
+.project_video_169{
+	width:800px;
+	height:auto;
+	padding-top:32px;
+	border:none;
+	border-color:#000000;}
+
+.spacing_large{
+	margin-bottom: 32px;
+}
+.spacing_small{
+	margin-bottom: 15px;
+}
+
+.p_space{
+	padding-top: 3px;
+	padding-bottom: 9px;
+}
+
+#nav_bottom{
+
+	font-size: 13px;
+	margin-top: 35px;
+	padding-bottom: 35px;
+
+	}
+
+#nav_top{
+	margin-left:auto;
+	margin-right:auto;
+
+	font-size: 13px;
+	padding-left:25px;
+	padding-right:25px;
+	padding-top:35px;
+    color: #FFFFFF;
+	min-width: 1200px;
+	}
+
+
+#copyright{
+	color: #AAA;
+	font-size: 11px;
+    margin-top: 28px;
+	margin-bottom: 34px;
+	float:right;
+}
+
+#preloaded-images1 {
+   height: 1px;
+   width: 1px;
+   background-image:url(../img_spartathlon/sparta_header_SM.jpg);
+	background-repeat:no-repeat; 
+	display: none;
+}
+
+#preloaded-images2{
+   height: 1px;
+   width: 1px;
+   background-image:url(../img_lab2/lab2_header_SM.jpg);
+	background-repeat:no-repeat; 
+	display: none;
+}
+
+#preloaded-images3 {
+   height: 1px;
+   width: 1px;
+   background:url(../images_goma/sgoma_header_SM.jpg);
+	background-repeat:no-repeat; 
+	display: none;
+}
+
+#preloaded-images11 {
+   height: 1px;
+   width: 1px;
+   background-image:url(../img_spartathlon/sparta_header_GR.jpg);
+	background-repeat:no-repeat; 
+	display: none;
+}
+
+
+#preloaded-images21{
+   height: 1px;
+   width: 1px;
+   background-image:url(../img_lab2/lab2_header_GR.jpg);
+	background-repeat:no-repeat; 
+	display: none;
+}
+
+#preloaded-images31 {
+   height: 1px;
+   width: 1px;
+   background-image:url(../images_goma/sgoma_header_GR.jpg);
+   background-repeat:no-repeat; 
+}
+
+.nav_r{ 
+	float:right;
+	
+}
+
+.nav_l{ 
+	float:left;
+	
+}
+
+.list{
+	margin-top:10px;}
+
+#indexer{
+	
+		}
+
+
+
+
+
+.h1{
+	font-size: 55px;
+	letter-spacing: 2px;
+	 text-shadow: 0px 0px 10px #000;
+	text-transform: uppercase;
+	line-height: 80px;
+}
+.h2{
+	
+		font-size: 28px;
+		margin-bottom: 5px;
+	letter-spacing: 1.2px;
+	 text-shadow: 0px 0px 6px #000000;
+	text-transform: uppercase;
+	
+}
+.h3{
+	font-size: 16px;
+	line-height: 1.8em;
+	letter-spacing: 1.4px;
+ text-shadow: 0px 0px 6px #000000;
+	text-transform: uppercase;
+}
+
+#hero_text{
+	padding-left: 70px;
+	padding-right: 70px;
+	margin-bottom: 30px;
+	
+	position: fixed; 
+	top:20px; 
+	left:5px; 
+	
+	color:#fff; 
+	
+	transform: scale(0.4);  
+	transform-origin: 0% 0%;  
+
+}
+
+/* MINIMAL adaption for smartphone use */
+@media only screen and  (max-width: 1200px) {
+	#hero_text{
+		transform: scale(0.35); 
+		left:0px; 
+	}
+
+	
+}

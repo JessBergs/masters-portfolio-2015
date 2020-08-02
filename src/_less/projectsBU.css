@@ -1,0 +1,410 @@
+/* LESS Document */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(https://fonts.gstatic.com/s/opensans/v15/memnYaGs126MiZpBA-UFUKWyV9hrIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v15/mem6YaGs126MiZpBA-UFUK0Zdcg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(https://fonts.gstatic.com/s/opensans/v15/memnYaGs126MiZpBA-UFUKXGUdhrIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Quicksand Light'), local('Quicksand-Light'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKodSZaM9iE8KbpRA_pgHYYT8L6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Quicksand Medium'), local('Quicksand-Medium'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKodSZaM9iE8KbpRA_p2HcYT8L6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKodSZaM9iE8KbpRA_pkHEYT8L6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+/* MINIMAL adaption for smartphone use */
+@media only screen and (max-width: 1300px) {
+  #hero_text {
+    transform: scale(0.35);
+    left: 0px;
+  }
+}
+html {
+  font-family: 'Quicksand', 'sans-serif';
+}
+body {
+  min-width: 1300px;
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  body {
+    width: 100%;
+    min-width: 380px;
+    background-color: #000;
+    font-family: 'Quicksand', 'sans-serif';
+  }
+}
+a:link {
+  color: #AAA;
+}
+a:hover {
+  color: #FFF;
+}
+a:visited {
+  color: #FFF;
+}
+a:active {
+  color: #AAA;
+}
+#nav_top {
+  min-width: 1300px;
+  padding-top: 35px;
+  z-index: 95;
+  font-size: 0.815625em;
+  color: #FFF;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #nav_top {
+    width: 100%;
+    min-width: 380px;
+    font-size: 0.815625em;
+    z-index: 25;
+  }
+}
+.nav_r {
+  float: right;
+}
+.nav_l {
+  float: left;
+}
+#parallax_bg {
+  min-width: minWidth_body_desktop;
+  height: 275px;
+  background-color: #000;
+  background-attachment: fixed;
+  background-position: 50% -25px;
+  background-size: 2880px 538px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #parallax_bg {
+    min-width: 380px;
+  }
+}
+#parallax_content {
+  min-width: minWidth_body_desktop;
+  background-color: #000;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #parallax_content {
+    min-width: 380px;
+  }
+}
+#project_content {
+  max-width: 800px;
+  min-width: 100px;
+  padding-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #FFF;
+  background-color: #000;
+  z-index: 1000;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #project_content {
+    min-width: 300px;
+    max-width: 600px;
+  }
+}
+#project_title {
+  font-size: 3.4375em;
+  text-transform: uppercase;
+  line-height: 1.0em;
+  letter-spacing: 0em;
+  font-kerning: auto;
+  margin-bottom: 8px;
+  position: relative;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #project_title {
+    font-size: 3.4375em;
+  }
+}
+#project_sub {
+  font-size: 1.5625em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #project_sub {
+    font-size: 1.5625em;
+  }
+}
+#project_tag {
+  font-size: 0.90625em;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #AAA;
+  margin-top: 15px;
+  margin-bottom: 27.5px;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #project_tag {
+    font-size: 0.90625em;
+  }
+}
+#project_footer {
+  font-size: 0.90625em;
+  line-height: 1.5em;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #project_footer {
+    font-size: 0.90625em;
+  }
+}
+.project_h1 {
+  font-size: 1.5625em;
+  margin-top: 28px;
+  text-transform: uppercase;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  .project_h1 {
+    font-size: 1.5625em;
+  }
+}
+.project_h2 {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  .project_h2 {
+    font-size: 1.125em;
+  }
+}
+.project_text {
+  font-size: 0.90625em;
+  line-height: 25px;
+  text-align: left;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  .project_text {
+    font-size: 0.90625em;
+    line-height: 28.2px;
+  }
+}
+.project_paragraph {
+  margin-top: 12px;
+}
+.project_image_169 {
+  max-width: 800px;
+  padding-top: 32px;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  .project_image_169 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.project_slideshow_169 {
+  width: inherit;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  .project_slideshow_169 {
+    width: inherit;
+    height: auto;
+  }
+}
+.project_video_169_container {
+  width: inherit;
+  position: relative;
+  height: auto;
+  min-width: 800px;
+  min-height: 450px;
+  padding-top: 32px;
+  margin-top: 20px;
+  border: none;
+  border-color: #000;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  .project_video_169_container {
+    min-width: 300px;
+    min-height: 168.75px;
+  }
+}
+.project_video_169 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.spacing_large {
+  margin-bottom: 32px;
+}
+.spacing_small {
+  margin-bottom: 15px;
+}
+.p_space {
+  padding-top: 0px;
+  padding-bottom: 9px;
+}
+#nav_bottom {
+  font-size: 13px;
+  margin-top: 35px;
+  padding-bottom: 35px;
+}
+#copyright {
+  color: #AAA;
+  font-size: 11px;
+  margin-top: 28px;
+  margin-bottom: 34px;
+  float: right;
+}
+.list {
+  margin-top: 10px;
+}
+#hero_text {
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  color: #FFF;
+  transform: scale(0.45);
+  transform-origin: 0% 0%;
+}
+@media only screen and (max-width: 1300px) and (min-width: 300px) and (orientation: 'portrait')  {
+  #hero_text {
+    position: absolute;
+    transform: scale(0.45);
+    top: 30px;
+  }
+}
+.h1 {
+  font-size: 3.4375em;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 10px #000;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+.h2 {
+  font-size: 1.5625em;
+  letter-spacing: 1.2px;
+  text-shadow: 0px 0px 6px #000;
+  text-transform: uppercase;
+  line-height: 1.8em;
+  margin-bottom: 5px;
+}
+.h3 {
+  font-size: fontSize_subsubline;
+  line-height: 1.8em;
+  letter-spacing: 1.4px;
+  text-shadow: 0px 0px 6px #000;
+  text-transform: uppercase;
+}
+#preloaded-images1 {
+  background-image: url(../img_spartathlon/sparta_header_SM.jpg);
+  background-size: 1px 1px;
+  height: 1px;
+  width: 1px;
+}
+#preloaded-images2 {
+  background-image: url(../img_lab2/lab2_header_SM.jpg);
+  background-size: 1px 1px;
+  height: 1px;
+  width: 1px;
+}
+#preloaded-images3 {
+  background: url(../images_goma/sgoma_header_SM.jpg);
+  background-size: 1px 1px;
+  height: 1px;
+  width: 1px;
+}
+#preloaded-images11 {
+  background-image: url(../img_spartathlon/sparta_header_GR.jpg);
+  background-size: 1px 1px;
+  height: 1px;
+  width: 1px;
+}
+#preloaded-images21 {
+  background-image: url(../img_lab2/lab2_header_GR.jpg);
+  background-size: 1px 1px;
+  height: 1px;
+  width: 1px;
+}
+#preloaded-images31 {
+  background-image: url(../images_goma/sgoma_header_GR.jpg);
+  background-size: 1px 1px;
+  height: 1px;
+  width: 1px;
+}

@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta property="og:image" content="http://www.jbergs.eu/img_goma/goma_plate3.jpg"/>
+    <meta property="og:title" content="GoMA Heritage Visualisation"/>
+    <meta property="og:type" content="website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1"/>
+
+    <title>Jessica Bergs || GoMA</title>
+
+    <link href="../_less/projects.css" rel="stylesheet" type="text/css">
+    <link href="../_css/flexslider.css" rel="stylesheet" type="text/css">
+
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/jquery.flexslider.js"></script>
+    <script src="../_js/slideshow.js"></script>
+
+</head>
+
+
+<body>
+
+<div id="parallax_bg">
+    <script id="bgImageLinker" src="../_js/parallaxlinking.js" bgImagelarge="../../res/images/goma_header_GR.jpg"
+            bgImagesmall="../../res/images/goma_header_SM.jpg"></script>
+    <!--Parallax bg defined in CSS-->
+</div>
+
+<div class="parallax_content"> <!--Parallax overlap-->
+
+    <div id="hero_text"><a href="../../index.html" style="color: #fff; text-decoration: none;">
+        <div class="h1" style="font-size: 55px; line-height: 70px;"> Jessica Bergs</div>
+        <div class="h2" style=" line-height: 50px;"> Master's portfolio</div>
+    </a></div>
+
+    <div id="nav_top">
+        <script type="text/javascript" src="../_js/navScroll.js"></script>
+    </div>
+
+    <div class="margin">
+        <div class="nav_l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lsaquo;&nbsp;<a href="spartathlon.html">Spartathlon </a></div>
+    </div>
+    <div id="project_wrapper">
+        <div id="project_content"> <!--Texts container-->
+            <div id="navPos_mobile">
+                <div class="nav_l_fix">&lsaquo;&nbsp; <a href="spartathlon.html">Spartathlon</a></div>
+                <div class="nav_r_fix"><a href="lab2.html">Lab<sup>2</sup></a>&nbsp;&rsaquo;</div>
+            </div>
+
+            <!***** PROJECT HEADING ****>
+
+            <div id="project_title">GOMA GLASGOW</div>
+            <div id="project_sub">Interactive Heritage Visualisation</div>
+            <hr>
+            <div id="project_tag">
+                <p>3D modelling &amp; scanning // RT3D // Unity physically based shading</p>
+            </div>
+
+            <!***** CONTENT ****>
+
+            <div class="project_text">The aim of this project was to create an interactive 3D visualisation of the front
+                part of Glasgow’s <a href="https://en.wikipedia.org/wiki/Gallery_of_Modern_Art,_Glasgow">Gallery of
+                    Modern Art</a> (GoMA) by using a combination of conventional 3D modelling and photogrammetry-based
+                reproduction techniques.
+                <div class="project_paragraph"> The reconstructed parts comprise the facade of the Gallery’s 1780
+                    Royal exchange building and forefront <a
+                            href="https://en.wikipedia.org/wiki/Equestrian_statue_of_the_Duke_of_Wellington,_Glasgow">
+                        equestrian statue of the Duke of Wellington</a>. The final models were staged in
+                    Unity together with low-poly models of the surrounding Glaswegian cityscape (Google Maps models).
+                </div>
+                <div class="project_paragraph"> The model can be explored interactively
+                    with a first-person controller.
+                </div>
+            </div>
+
+            <div class="project_video_169_container">
+                <iframe class="project_video_169" src="https://www.youtube.com/embed/5h5-iIPu7bM" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="project_h1">From High-Res 3D Scan to Game Art Asset</div>
+            <div class="project_text"> While the facade's and statue's general geometry was reproduced using conventional 3D
+                modelling techniques, the reconstruction of more filigree parts, e.g. the bronze plates on the statue's
+                socket, was realised using a photogrammetry-based 3D scanning workflow.
+                <div class="project_paragraph">
+                    Photogrammety techniques allow to reproduce real-world objects from a series of photographs to create 3D models of stunning detail.
+                    However, the resulting model meshes are often too large to be used in real-time 3D (RT3D) visualisations:
+                    a high-res photogrammetry mesh can easily exceed 1m vertices, but RT3D engines such as Unity only support meshes of up to 64K vertices.
+                    Hence, to be usable as a 3D asset in Unity, a photogrammetry mesh first needs to be downsampled to 6% of its
+                    original resolution. However, a brute-force mesh reduction at this scale would also result in the loss of
+                    the model's valuable details.
+                </div>
+                <div class="project_paragraph">
+					Therefore, to be able to use photogrammetric models in this project, a workflow was developed for reducing high-res meshes to the required size while at the
+                    same time preserving as much of their rich artistic detail as possible.
+                </div>
+                <div class="project_paragraph"> The steps of the final workflow are demonstrated below:
+                </div>
+            </div>
+
+            <div class="project_slideshow_169">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="../../res/images/goma_workflow__0006_Ebene 1.jpg"/>
+                            <div class="flex-caption">A photogrammetric analysis of 38 photos produces a high-res point
+                                cloud of ca. 10m points (Agisoft Photoscan).
+                            </div>
+                        </li>
+                        <li><img src="../../res/images/goma_workflow__0005_Gruppe 2.jpg"/>
+                            <div class="flex-caption">The resulting high-res mesh counts about 1.1m vertices.</div>
+                        </li>
+                        <li><img src="../../res/images/goma_workflow__0004_Ebene 4.jpg"/>
+                            <div class="flex-caption">The texture is rendered at 4k resolution.</div>
+                        </li>
+                        <li><img src="../res/workflow/goma_workflow__0003_Gruppe 3.jpg"/>
+                            <div class="flex-caption">A close-up view of high-res mesh and texture result (12x zoom)
+                                reveals the model's high level of detail.
+                            </div>
+                        </li>
+                        <li><img src="../../res/images/goma_workflow__0002_Ebene 2.jpg"/>
+                            <div class="flex-caption">The original point cloud is used to reconstruct a low-res version
+                                of the mesh of ca. 20k vertices via <br>
+                                Poisson Surface Reconstruction (Meshlab).
+                            </div>
+                        </li>
+                        <li><img src="../../res/images/goma_workflow__0001_Gruppe 3 Kopie.jpg"/>
+                            <div class="flex-caption">The details of the high-res mesh are transferred to the low-res
+                                version as a normal map (using Mudbox).<br>
+                                The map is then filtered for noise and artifacts.
+                            </div>
+                        </li>
+                        <li><img src="../../res/images/goma_workflow__0000_Ebene 3.jpg"/>
+                            <div class="flex-caption">The texture UVs of the high-res mesh are transferred to the
+                                low-res version. As a finishing step, the texture undergoes
+                                some post-processing, i.e. stitching artifacts are retouched and blank spots are filled
+                                in.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iframe_fitter">
+                                <iframe class="iframe"
+                                        src="https://sketchfab.com/models/d5ba8a80db4e4c9d9925fbbab52a03c5/embed"
+                                        frameborder="0" allowfullscreen
+                                        webkitallowfullscreen="true" onmousewheel=""></iframe>
+                                <div class="flex-caption">The finished low-res bronze plate (20K vertices, 4K texture
+                                    map, 2K normal map)
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="project_text"> The workflow was used to create the statue's four bronze plates, the GoMA's entrance doors and the Corinthian pillar capitals:
+            </div>
+            <div class="project_slideshow_169">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="../../res/images/goma_plate3.jpg"/>
+                            <div class="flex-caption">Close-up of east-facing plate</div>
+                        </li>
+                        <li><img src="../../res/images/goma_doors.jpg"/>
+                            <div class="flex-caption">The gold-painted wooden entrance doors</div>
+                        </li>
+                        <li><img src="../../res/images/goma_pillarcapital.jpg"/>
+                            <div class="flex-caption">The Corinthian pillar capitals</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!***** FOOTER ****>
+
+            <div id="project_footer">
+                <div class="project_h1">Project Specs</div>
+                <div class="p_space">PLATFORM: Standalone application (Win / Mac)</div>
+                <div class="p_space">KEY METHODS: Photogrammetry, mesh resolution reduction with detail transfer,
+                    physically based shading
+                </div>
+                <div class="p_space">SOFTWARE USED: Unity3D, Agisoft Photoscan, Autodesk 3ds Max, Autodesk Mudbox,
+                    Meshlab, Quixel Suite, Adobe Illustrator, Adobe Photoshop
+                </div>
+                <div class="p_space">REFERENCES: <a
+                        href="https://3dwarehouse.sketchup.com/user.html?id=1375918354338648496230605">Glasgow Google
+                    Maps models (Stephen Dunlop)</a>, <a
+                        href="http://www.123dapp.com/123C-3D-Model/Warmblood-Horse--Rider--Neutral-Pose/817063">"Warmblood
+                    Horse &amp; Rider" (Autodesk) </a>
+                </div>
+            </div>
+            <div id="copyright"><a href="https://uk.linkedin.com/in/jbergs"> <img height="10px" width="10px"
+                                                                                  src="../../res/images/linkedin.png"
+                                                                                  style="margin-right:2px;"></a> Jessica
+                Bergs 2020 All rights reserved.
+            </div>
+            <div style="visibility: hidden;height: 0px; width: 0px;" id="hero_text_compactVersion"><a
+                    href="../../index.html" style="color: #fff; text-decoration: none;">
+                <div class="h1" style="font-size: 55px; line-height: 70px;"> JBERGS</div>
+            </a></div>
+        </div>
+    </div>
+
+    <div class="margin">
+        <div class="nav_r"><a href="lab2.html">Lab<sup>2</sup></a>&nbsp;&rsaquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

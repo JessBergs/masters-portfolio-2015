@@ -1,0 +1,299 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta property="og:image" content="http://www.jbergs.eu/img_index/indexer_lab2.jpg"/>
+    <meta property="og:title" content="LabSquare"/>
+    <meta property="og:type" content="website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1"/>
+
+    <title>Jessica Bergs || LabSquare</title>
+
+    <link href="../_less/projects.css" rel="stylesheet" type="text/css">
+    <link href="../_css/flexslider.css" rel="stylesheet" type="text/css">
+
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="../_js/navScroll.js"></script>
+    <script src="../_js/slideshow.js"></script>
+
+</head>
+
+
+<body>
+
+<div id="parallax_bg">
+    <script id="bgImageLinker" src="../_js/parallaxlinking.js" bgImagelarge="../../res/images/lab2_header_GR.jpg"
+            bgImagesmall="../../res/images/lab2_header_SM.jpg"></script>
+    <!--Parallax bg defined in CSS-->
+</div>
+<div class="parallax_content"> <!--Parallax overlap-->
+    <div id="hero_text"><a href="../../index.html" style="color: #fff; text-decoration: none;">
+        <div class="h1" style="font-size: 55px; line-height: 70px;"> Jessica Bergs</div>
+        <div class="h2" style=" line-height: 50px;"> Master's portfolio</div>
+    </a></div>
+    <div id="nav_top">
+    </div>
+    <div class="margin">
+        <div class="nav_l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lsaquo;&nbsp;<a href="goma.html">GoMA </a></div>
+    </div>
+    <div id="project_wrapper">
+        <div id="project_content"> <!--Texts container-->
+
+            <div id="navPos_mobile">
+                <div class="nav_l_fix">&lsaquo;&nbsp; <a href="goma.html">GoMA</a></div>
+                <div class="nav_r_fix"><a href="spartathlon.html">Spartathlon</a> &nbsp;&rsaquo;</div>
+            </div>
+
+            <!***** PROJECT HEADING ****>
+
+            <div id="project_title" style="margin-top: -20px;">LAb<sup>2</sup></div>
+            <div id="project_sub" style="line-height:1.45em;">A collaborative cross-reality game <br>
+                for virtual team building
+            </div>
+            <hr>
+            <div id="project_tag">
+                <p>Multiplayer Serious Game // Tangible interface // Spatial virtual reality </p>
+            </div>
+
+            <!***** CONTENT ****>
+
+            <div class="project_text"> Lab<sup>2</sup> presents an experimental approach to a team building exercise
+                specifically geared to train virtual, i.e. non-face-to-face, collaboration:
+                <ul>
+                    <li class="list"><strong> Bonding game framing: </strong> The game-based exercise engages two
+                        players in a playful, fun activity which aims to foster social bonds. The game principle of
+                        Lab<sup>2</sup> is based on the board game The Amazing Labyrinth&reg; (Kobbert, Ravensburger,
+                        1968) which invites players to a treasure hunt in a movable maze.
+                    </li>
+                    <li class="list"><strong> Collaborative gameplay: </strong> The gameplay design aims at triggering
+                        as much of collaborative communication between the players as possible. However, they rely on
+                        verbal communication only and cannot see each other’s interface. For winning the game the
+                        players have to work together.
+                    </li>
+                    <li class="list"><strong> Cross-reality interfaces: </strong> For mimicking the interdisciplinary
+                        collaboration common in virtual teams, the two players take asymmetrical roles. They use each an
+                        individual interface that provides them with a role-specific set of game controls and view of
+                        the maze.
+                        The interfaces were designed towards maximum intuitivity in order to not unnecessarily obstruct
+                        the players when playing the game. In achieving this, one interface employs real-world tangibles
+                        (a game board with movable tiles), the other immersive virtual reality (through a head-mounted
+                        display). The two interfaces are cross-linked in real time.
+                    </li>
+                </ul>
+                <div class="project_text">
+                    A research poster on the project was presented at the <a href="http://radar.gsa.ac.uk/4771/">iLRN Conference 2016, Santa Barbara</a>.
+                </div>
+            </div>
+            <div class="project_h1">Cross-reality Interfaces &amp; System Architecture</div>
+            <div class="project_h2">Tangible game board</div>
+            <div class="project_text">One player uses a real game board that shows a two-dimensional maze of some fixed
+                and some moveable pathway tiles. The player can re-arrange the maze by using one of three spare tiles.
+            </div>
+            <div class="project_slideshow_169">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="../../res/images/board_bland.jpg"/>
+                            <div class="flex-caption">Game board concept graphic</div>
+                        </li>
+                        <li><img src="../../res/images/boardreal.jpg"/>
+                            <div class="flex-caption">Game board prototype (plywood, fine-art paper)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project_h2">Spatial VR HMD</div>
+            <div class="project_text">The second player is equipped with an untethered head-mounted display (HMD)
+                through which he finds himself inside the very board's 3D maze. The HMD’s position and rotation are
+                tracked by an IR Motion Capture system. As the player moves within the tracking volume and/or rotates
+                his head, the player´s view of the maze updates accordingly in real-time.
+            </div>
+            <div class="project_slideshow_169">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="../../res/images/lab2_hmd_keyvis.jpg"/>
+                            <div class="flex-caption">HMD concept graphic</div>
+                        </li>
+                        <li><img src="../../res/images/lab2_hmd_cardboard.jpg"/>
+                            <div class="flex-caption">HMD prototype combining a foam-based Google Cardboard viewer with
+                                a Nexus 5 and Vicon tracker body
+                            </div>
+                        </li>
+                        <li>
+                            <video class="slideshow_video" poster="../../res/images/lab2_HMDupdate_poster.jpg"
+                                   preload="auto" controls loop>
+                                <source src="../../res/video/lab2_HMDupdate.ogv" type="video/ogg">
+                                </source>
+                                <source src="../../res/video/lab2_HMDupdate.webm" type="video/webm">
+                                </source>
+                                <source src="../../res/video/lab2_HMDupdate.mp4" type="video/mp4">
+                                </source>
+                            </video>
+                            <div class="flex-caption">The VR-player can explore the maze by actual walking and head
+                                rotating.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project_h2">Cross-reality linking</div>
+            <div class="project_text">The game board and virtual maze are cross-linked in real time: <br>
+                On the game board, a real-time projection mapping shows the current position of the VR player and other
+                dynamic elements in the 3D-maze.<br>
+                At the same time, the game board's layout is continuously synced with that of the 3D maze: two webcams
+                above the game board track the position and rotation of the single pathway tiles. If a line of tiles is
+                pushed on the board, this movement is reproduced simultaneously in the virtual version of the maze.
+            </div>
+            <div class="project_slideshow_169">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img width="800" height="300" src="../../res/images/lab2_crosslink1.jpg"/>
+                            <div class="flex-caption">The dynamic game elements are projected onto the game board.</div>
+                        </li>
+                        <li>
+                            <video class="slideshow_video" poster="../../res/images/lab2_projectionupdate_poster.jpg"
+                                   preload="auto" controls loop>
+                                <source src="../../res/video/lab2_projectionupdate.ogv" type="video/ogg">
+                                </source>
+                                <source src="../../res/video/lab2_projectionupdate.webm" type="video/webm">
+                                </source>
+                                <source src="../../res/video/lab2_projectionupdate.mp4" type="video/mp4">
+                                </source>
+                            </video>
+                            <div class="flex-caption">As the VR-player moves within the maze, his position &amp;
+                                rotation are updated on the board in real time.
+                            </div>
+                        </li>
+                        <li>
+                            <video class="slideshow_video" poster="../../res/images/lab2_bordupdate_poster.jpg"
+                                   preload="auto" controls loop>
+                                <source src="../../res/video/lab2_boardupdate.ogv" type="video/ogg">
+                                </source>
+                                <source src="../../res/video/lab2_boardupdate.webm" type="video/webm">
+                                </source>
+                                <source src="../../res/video/lab2_boardupdate.mp4" type="video/mp4">
+                                </source>
+                            </video>
+                            <div class="flex-caption">Tile movements on the game board are reproduced in the virtual
+                                maze.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project_h2">System architecture</div>
+            <div class="project_text"> The game's system consists of seven distributed Unity units and one Vicon MoCap
+                server that communicate through a locally hosted multiplayer game server.
+            </div>
+            <div class="project_slideshow_169">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="../../res/images/lab2_sysarch.png"/>
+                            <div class="flex-caption">Simplified system architecture overview</div>
+                        </li>
+                        <li><img src="../../res/images/lab2_sysarch_master.jpg"/>
+                            <div class="flex-caption">Basic Game Master UI</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project_h1">Collaborative Gameplay</div>
+            <div class="project_text"> The players take the roles of two computer scientists who have been locked up in
+                their lab by a malicious AI they have been experimenting on. The only way to free themselves is to
+                retrieve and run the AI's "Emergency Shutdown Programme". However, the programme's five code fragments
+                are hidden inside the AI’s maze of registers. In taking on the challenge, the computer scientists have
+                managed to cobble together two interfaces that allow them to access the AI to recover the code.
+                <div class="project_paragraph"> Through their individual interfaces the players take on asymmetric
+                    roles: one player uses an HMD to find himself inside the AI's maze of registers (the 3D maze) where
+                    he has to search for the code fragments. The other player uses the physical game board to re-arrange
+                    the AI's hardware (the game board maze) in order to create pathways to the code fragments. He then
+                    directs the VR-player towards them. While playing the game, the players cannot see each other but
+                    rely on verbal communication only.
+                </div>
+                <div class="project_paragraph"> Once at a code container, the VR-player can read the necessary
+                    information (a number) on its label that the players require for unlocking and downloading the code
+                    fragment. The unlocking process involves a joint task that the players have to perform
+                    simultaneously.
+                </div>
+                <div class="project_paragraph"> However, the players will also need to be on the alert at all times as
+                    the AI will try to fend off the invaders.
+                    Each player has limited health resources and an uncareful action might draw on these. If one player
+                    runs out of resources, the game is lost for both. Hence, the players sink and swim together.
+                </div>
+            </div>
+            <div class="project_slideshow_169">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="../../res/images/lab2_collab1.jpg"/>
+                            <div class="flex-caption">The players take asymmetric roles in managing the game board and
+                                navigating in the maze.
+                            </div>
+                        </li>
+                        <li><img src="../../res/images/lab2_collab2.jpg"/>
+                            <div class="flex-caption">Collecting a code-piece requires that the players perform a joint
+                                task simultaneously.
+                            </div>
+                        </li>
+                        <li><img src="../../res/images/lab2_collab3.jpg"/>
+                            <div class="flex-caption">The maze holds many perils but the players can only beat the AI
+                                together.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!***** FOOTER ****>
+            <div class="project_h1">Project Specs</div>
+            <div id="project_footer">
+                <div class="p_space">PLATFORM: Desktop application (Mac / Win), Android 5.0, Arduino UNO, VICON Bonita
+                </div>
+                <div class="p_space">KEY METHODS: Multiplayer networking, IR motion capture, feature-based tracking,
+                    untethered HMD, laser cutting, electronics / microcontroller programming
+                </div>
+                <div class="p_space">SOFTWARE USED: Unity3D 5.1, Exit Games Photon Multiplayer Games Server, Vicon
+                    Tracker, Arduino IDE, Adobe Illustrator
+                </div>
+                <div class="p_space">REFERENCES: <a
+                        href="https://www.ravensburger.com/uk/games/family-games/labyrinth/index.html">The Amazing
+                    Labyrinth&reg; (Max Kobbert, Ravensburger)</a>, <a href="https://www.photonengine.com/en/PUN">
+                    Photon Unity Network SDK (Exit Games),</a> <a href="https://www.qualcomm.com/products/vuforia">Vuforia
+                    for Unity extension (Qualcomm),</a> <a href="https://developers.google.com/cardboard/unity/">Cardboard
+                    SDK for Unity (Google),</a> Vicon Tracker Unity Plugin (Dr. Matthieu Poyade, GSA)
+                </div>
+            </div>
+
+            <div id="copyright"><a href="https://uk.linkedin.com/in/jbergs"> <img height="10px" width="10px"
+                                                                                  src="../../res/images/linkedin.png"
+                                                                                  style="margin-right:2px;"></a> Jessica
+                Bergs 2020 All rights reserved.
+            </div>
+            <div style="visibility: hidden;height: 0px; width: 0px;" id="hero_text_compactVersion"><a
+                    href="../../index.html" style="color: #fff; text-decoration: none;">
+                <div class="h1" style="font-size: 55px; line-height: 70px;"> JBERGS</div>
+            </a></div>
+
+        </div>
+</div>
+
+<div class="margin">
+    <div class="nav_r"><a href="spartathlon.html">Spartathlon</a>&nbsp;&rsaquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+
+<div id="preloader">
+    <div id="preloaded-images1"></div>
+    <div id="preloaded-images2"></div>
+    <div id="preloaded-images3"></div>
+    <div id="preloaded-images11"></div>
+    <div id="preloaded-images21"></div>
+    <div id="preloaded-images31"></div>
+</div>
+
+</body>
+
+</html>
